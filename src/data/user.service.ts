@@ -1,36 +1,34 @@
-import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
-import { User } from './users.model';
+import { Injectable, signal } from '@angular/core';
+import { USERS } from './users';
+import { computed } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
 export class UserService {
-  private users = new BehaviorSubject<User[]>(this.users);
-  users$ = this.users.asObservable();
+  private users = signal(USERS);
 
-  getAll() {
-    return this.users$;
+  allUsers = computed(() => this.users());
+  activeUsers = computed(() =>
+    this.users().filter((u) => u.status === 'active')
+  );
+
+  getUser(id: number) {
+    return this.users().find((user) => user.id === id);
   }
 
-  getById(id: number): User | undefined {
-    return this.users.getValue().find((u) => u.id === id);
+  addUser(user: any) {
+    const updated = [...this.users(), user];
+    this.users.set(updated);
   }
 
-  add(user: User) {
-    const current = this.users.getValue();
-    this.users.next([...current, { ...user, id: Date.now() }]);
+  updateUser(id: number, updatedUser: any) {
+    this.users.set(
+      this.users().map((user) =>
+        user.id === id ? { ...user, ...updatedUser } : user
+      )
+    );
   }
 
-  update(updatedUser: User) {
-    const current = this.users
-      .getValue()
-      .map((user) => (user.id === updatedUser.id ? updatedUser : user));
-    this.users.next(current);
-  }
-
-  softDelete(id: number) {
-    const current = this.users
-      .getValue()
-      .map((user) => (user.id === id ? { ...user, status: 'inactive' } : user));
-    this.users.next(current);
+  softDeleteUser(id: number) {
+    this.updateUser(id, { status: 'inactive' });
   }
 }

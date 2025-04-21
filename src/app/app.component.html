@@ -1,220 +1,90 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-<style>
-  :host {
-    --bright-blue: oklch(51.01% 0.274 263.83);
-    --electric-violet: oklch(53.18% 0.28 296.97);
-    --french-violet: oklch(47.66% 0.246 305.88);
-    --vivid-pink: oklch(69.02% 0.277 332.77);
-    --hot-red: oklch(61.42% 0.238 15.34);
-    --orange-red: oklch(63.32% 0.24 31.68);
-
-    --gray-900: oklch(19.37% 0.006 300.98);
-    --gray-700: oklch(36.98% 0.014 302.71);
-    --gray-400: oklch(70.9% 0.015 304.04);
-
-    --red-to-pink-to-purple-vertical-gradient: linear-gradient(
-      180deg,
-      var(--orange-red) 0%,
-      var(--vivid-pink) 50%,
-      var(--electric-violet) 100%
-    );
-
-    --red-to-pink-to-purple-horizontal-gradient: linear-gradient(
-      90deg,
-      var(--orange-red) 0%,
-      var(--vivid-pink) 50%,
-      var(--electric-violet) 100%
-    );
-
-    --pill-accent: var(--bright-blue);
-
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-      "Segoe UI Symbol";
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  h1 {
-    font-size: 3.125rem;
-    color: var(--gray-900);
-    font-weight: 500;
-    line-height: 100%;
-    letter-spacing: -0.125rem;
-    margin: 0;
-    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
-      "Segoe UI Emoji", "Segoe UI Symbol";
-  }
-
-  p {
-    margin: 0;
-    color: var(--gray-700);
-  }
-
-  main {
-    width: 100%;
-    min-height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    box-sizing: inherit;
-    position: relative;
-  }
-
-  .angular-logo {
-    max-width: 9.2rem;
-  }
-
-  .content {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    max-width: 700px;
-    margin-bottom: 3rem;
-  }
-
-  .content h1 {
-    margin-top: 1.75rem;
-  }
-
-  .content p {
-    margin-top: 1.5rem;
-  }
-
-  .divider {
-    width: 1px;
-    background: var(--red-to-pink-to-purple-vertical-gradient);
-    margin-inline: 0.5rem;
-  }
-
-  .pill-group {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    flex-wrap: wrap;
-    gap: 1.25rem;
-  }
-
-  .pill {
-    display: flex;
-    align-items: center;
-    --pill-accent: var(--bright-blue);
-    background: color-mix(in srgb, var(--pill-accent) 5%, transparent);
-    color: var(--pill-accent);
-    padding-inline: 0.75rem;
-    padding-block: 0.375rem;
-    border-radius: 2.75rem;
-    border: 0;
-    transition: background 0.3s ease;
-    font-family: var(--inter-font);
-    font-size: 0.875rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.4rem;
-    letter-spacing: -0.00875rem;
-    text-decoration: none;
-  }
-
-  .pill:hover {
-    background: color-mix(in srgb, var(--pill-accent) 15%, transparent);
-  }
-
-  .pill-group .pill:nth-child(6n + 1) {
-    --pill-accent: var(--bright-blue);
-  }
-  .pill-group .pill:nth-child(6n + 2) {
-    --pill-accent: var(--french-violet);
-  }
-  .pill-group .pill:nth-child(6n + 3),
-  .pill-group .pill:nth-child(6n + 4),
-  .pill-group .pill:nth-child(6n + 5) {
-    --pill-accent: var(--hot-red);
-  }
-
-  .pill-group svg {
-    margin-inline-start: 0.25rem;
-  }
-
-  .social-links {
-    display: flex;
-    align-items: center;
-    gap: 0.73rem;
-    margin-top: 1.5rem;
-  }
-
-  .social-links path {
-    transition: fill 0.3s ease;
-    fill: var(--gray-400);
-  }
-
-  .social-links a:hover svg path {
-    fill: var(--gray-900);
-  }
-
-  @media screen and (max-width: 650px) {
-    .content {
-      flex-direction: column;
-      width: max-content;
-    }
-
-    .divider {
-      height: 1px;
-      width: 100%;
-      background: var(--red-to-pink-to-purple-horizontal-gradient);
-      margin-block: 1.5rem;
-    }
-  }
-</style>
-<div class="flex h-screen bg-gray-100">
-  <!-- Sidebar -->
-  <aside class="w-64 bg-white border-r">
-    <div class="p-6 text-xl font-bold border-b">Admin Dashboard</div>
-    <nav class="flex flex-col gap-2 p-4">
-      <a routerLink="/dashboard" class="p-2 rounded hover:bg-gray-200"
-        >Dashboard</a
-      >
-      <a routerLink="/users" class="p-2 rounded hover:bg-gray-200">Users</a>
-      <a routerLink="/products" class="p-2 rounded hover:bg-gray-200"
-        >Products</a
-      >
+<div class="dashboard-container">
+  <aside class="sidebar">
+    <h2 class="logo">✨ MyApp</h2>
+    <nav>
+      <ul>
+        <li><i class="icon-home"></i> Dashboard</li>
+        <li><i class="icon-user"></i> Users</li>
+        <li><i class="icon-box"></i> Products</li>
+        <li><i class="icon-settings"></i> Settings</li>
+      </ul>
     </nav>
   </aside>
 
-  <!-- Main -->
-  <div class="flex-1 flex flex-col">
-    <!-- Topbar -->
-    <header class="bg-white shadow p-4 flex justify-between items-center">
-      <h1 class="text-lg font-semibold">E-Commerce Admin</h1>
-      <div class="flex items-center gap-2">
-        <img src="" class="" />
-        <span class="text-sm font-medium">Admin</span>
+  <main class="main-content">
+    <header class="top-bar">
+      <h1>Welcome Back 👋</h1>
+      <div class="profile">
+        <img
+          src="https://ui-avatars.com/api/?name=John+Doe&background=4f46e5&color=fff&size=64&rounded=true"
+          alt="User"
+        />
       </div>
     </header>
 
-    <!-- Page Content -->
-    <main class="p-6 overflow-auto">
-      <router-outlet></router-outlet>
-    </main>
-  </div>
+    <section class="cards">
+      <div class="card glass">
+        <div class="card-icon income">💰</div>
+        <div class="card-details">
+          <h3>$12,345</h3>
+          <p>Total Income</p>
+        </div>
+      </div>
+      <div class="card glass">
+        <div class="card-icon orders">📦</div>
+        <div class="card-details">
+          <h3>842</h3>
+          <p>Orders</p>
+        </div>
+      </div>
+      <div class="card glass">
+        <div class="card-icon users">👥</div>
+        <div class="card-details">
+          <h3>1,530</h3>
+          <p>Customers</p>
+        </div>
+      </div>
+      <div class="card glass">
+        <div class="card-icon balance">💳</div>
+        <div class="card-details">
+          <h3>$8,450</h3>
+          <p>Balance</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="charts">
+      <div class="chart glass">📈 Products</div>
+      <div class="chart glass">📊 users</div>
+    </section>
+  </main>
 </div>
+<section class="charts">
+  <div class="chart glass">
+    <h3>📦 Products</h3>
+    <div class="list">
+      <div class="list-item" *ngFor="let product of PRODUCTS">
+        <img [src]="product.imageUrl" alt="{{ product.name }}" />
+        <div class="list-details">
+          <h4>{{ product.name }}</h4>
+          <p>${{ product.price }} • {{ product.category }}</p>
+          <small>Status: {{ product.status }}</small>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-<router-outlet />
+  <div class="chart glass">
+    <h3>👥 Users</h3>
+    <div class="list">
+      <div class="list-item" *ngFor="let user of USERS">
+        <img [src]="user.avatarUrl" alt="{{ user.name }}" />
+        <div class="list-details">
+          <h4>{{ user.name }}</h4>
+          <p>{{ user.email }}</p>
+          <small>{{ user.role }} • {{ user.status }}</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
