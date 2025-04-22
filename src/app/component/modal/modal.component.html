@@ -1,15 +1,35 @@
 @if (isOpen()) {
-<div
-  class="fixed inset-0 z-40 flex items-center justify-center bg-black/30 backdrop-blur-sm"
->
-  <div class="bg-white p-6 rounded shadow-lg w-full max-w-md">
-    <div class="flex justify-between items-center mb-4">
-      <h3 class="text-lg font-semibold">Modal Title</h3>
-      <button (click)="close()" class="text-gray-600 hover:text-gray-800">
-        &times;
+<div class="custom-modal-overlay">
+  <div class="custom-modal-content">
+    <!-- Modal Header -->
+    <div class="custom-modal-header">
+      <h3 class="custom-modal-title">Modal Title</h3>
+      <button
+        (click)="close()"
+        class="custom-close-btn"
+        aria-label="Close modal"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
       </button>
     </div>
-    <ng-content></ng-content>
+
+    <!-- Modal Body -->
+    <div class="custom-modal-body">
+      <ng-content></ng-content>
+    </div>
   </div>
 </div>
 }

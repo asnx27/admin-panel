@@ -23,4 +23,7 @@ export class FormService {
       status: [data?.status || 'available'],
     });
   }
+  resetForm(form: FormGroup) {
+    form.reset();
+  }
 }

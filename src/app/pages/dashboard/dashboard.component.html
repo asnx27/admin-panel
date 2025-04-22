@@ -1,16 +1,70 @@
-<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-  <div class="bg-white p-6 rounded-lg shadow">
-    <h2 class="text-lg font-semibold mb-2">Total Users</h2>
-    <p class="text-2xl font-bold text-blue-600">1245</p>
+<div class="stats-grid">
+  <!-- Total Users -->
+  <div class="stats-card">
+    <h2 class="stats-title">Total Users</h2>
+    <p class="stats-number text-blue">1,245</p>
+    <div class="stats-change text-green">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-4 w-4"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 10l7-7m0 0l7 7m-7-7v18"
+        />
+      </svg>
+      <span>+8.2% this week</span>
+    </div>
   </div>
 
-  <div class="bg-white p-6 rounded-lg shadow">
-    <h2 class="text-lg font-semibold mb-2">Sales</h2>
-    <p class="text-2xl font-bold text-green-600">$32,400</p>
+  <!-- Sales -->
+  <div class="stats-card">
+    <h2 class="stats-title">Sales</h2>
+    <p class="stats-number text-green">$32,400</p>
+    <div class="stats-change text-green">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-4 w-4"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 10l7-7m0 0l7 7m-7-7v18"
+        />
+      </svg>
+      <span>+5.7% this month</span>
+    </div>
   </div>
 
-  <div class="bg-white p-6 rounded-lg shadow">
-    <h2 class="text-lg font-semibold mb-2">New Signups</h2>
-    <p class="text-2xl font-bold text-purple-600">98</p>
+  <!-- New Signups -->
+  <div class="stats-card">
+    <h2 class="stats-title">New Signups</h2>
+    <p class="stats-number text-purple">98</p>
+    <div class="stats-change text-red">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-4 w-4 arrow-down"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 10l7-7m0 0l7 7m-7-7v18"
+        />
+      </svg>
+      <span>-2.1% since yesterday</span>
+    </div>
   </div>
 </div>

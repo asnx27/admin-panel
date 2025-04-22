@@ -1,13 +1,66 @@
-<header
-  class="h-16 bg-white border-b border-gray-200 flex items-center justify-between px-6 shadow-sm"
->
-  <h1 class="text-xl font-semibold">Dashboard</h1>
-  <div class="flex items-center gap-4">
-    <span class="text-sm text-gray-600">Welcome, Admin</span>
-    <button
-      class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 transition"
+<header class="custom-header">
+  <!-- Left: Icon + Title -->
+  <div class="header-left">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="icon home-icon"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
     >
-      Log Out
-    </button>
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M3 12l2-2m0 0l7-7 7 7M13 5v6h6"
+      />
+    </svg>
+    <h1 class="header-title">Dashboard</h1>
+  </div>
+
+  <!-- Right: Welcome + Avatar + Logout -->
+  <div class="header-right">
+    <div class="user-info">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon user-icon"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5.121 17.804A13.937 13.937 0 0112 15c2.21 0 4.304.535 6.121 1.484M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+        />
+      </svg>
+      <span class="welcome-text">Welcome, Admin</span>
+    </div>
+
+    <div class="user-avatar-group">
+      <img
+        src="https://i.pravatar.cc/40?img=3"
+        alt="User Avatar"
+        class="user-avatar"
+      />
+      <button class="logout-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon logout-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a2 2 0 01-2 2H7a2 2 0 01-2-2V7a2 2 0 012-2h4a2 2 0 012 2v1"
+          />
+        </svg>
+        <span>Log Out</span>
+      </button>
+    </div>
   </div>
 </header>

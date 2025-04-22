@@ -1,8 +1,16 @@
-<app-sidebar />
-<div class="ml-64">
-  <app-header />
-  <main class="p-6">
-    <router-outlet />
-    <app-toast />
-  </main>
+<div class="layout-wrapper">
+  <!-- Sidebar Navigation -->
+  <app-sidebar class="sidebar"></app-sidebar>
+
+  <!-- Main Dashboard Area -->
+  <div class="dashboard-container">
+    <!-- Top Header -->
+    <app-header class="header"></app-header>
+
+    <!-- Dynamic Page Content -->
+    <main class="page-content">
+      <router-outlet></router-outlet>
+      <app-toast></app-toast>
+    </main>
+  </div>
 </div>

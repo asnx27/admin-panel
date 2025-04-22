@@ -20,7 +20,8 @@ export const USERS: User[] = [
     createdAt: '2024-01-15T08:30:00Z',
     lastLogin: '2024-06-01T12:15:00Z',
     isEmailVerified: true,
-    avatarUrl: 'https://i.pravatar.cc/100?img=1',
+    avatarUrl:
+      'https://ui-avatars.com/api/?name=Alice+Johnson&background=random&size=100',
   },
   {
     id: 2,
@@ -31,7 +32,8 @@ export const USERS: User[] = [
     createdAt: '2023-11-10T14:45:00Z',
     lastLogin: null,
     isEmailVerified: false,
-    avatarUrl: 'https://i.pravatar.cc/100?img=2',
+    avatarUrl:
+      'https://ui-avatars.com/api/?name=Bob+Smith&background=random&size=100',
   },
   {
     id: 3,
@@ -42,7 +44,8 @@ export const USERS: User[] = [
     createdAt: '2024-03-01T09:00:00Z',
     lastLogin: '2024-06-10T18:40:00Z',
     isEmailVerified: true,
-    avatarUrl: 'https://i.pravatar.cc/100?img=3',
+    avatarUrl:
+      'https://ui-avatars.com/api/?name=Sarah+Lee&background=random&size=100',
   },
   {
     id: 4,
@@ -53,7 +56,8 @@ export const USERS: User[] = [
     createdAt: '2024-02-10T10:20:00Z',
     lastLogin: '2024-06-05T14:00:00Z',
     isEmailVerified: true,
-    avatarUrl: 'https://i.pravatar.cc/100?img=4',
+    avatarUrl:
+      'https://ui-avatars.com/api/?name=David+Miller&background=random&size=100',
   },
   {
     id: 5,
@@ -64,7 +68,8 @@ export const USERS: User[] = [
     createdAt: '2023-12-22T16:45:00Z',
     lastLogin: '2024-06-08T11:30:00Z',
     isEmailVerified: true,
-    avatarUrl: 'https://i.pravatar.cc/100?img=5',
+    avatarUrl:
+      'https://ui-avatars.com/api/?name=Emma+Brown&background=random&size=100',
   },
   {
     id: 6,
@@ -75,7 +80,8 @@ export const USERS: User[] = [
     createdAt: '2024-04-01T13:10:00Z',
     lastLogin: null,
     isEmailVerified: false,
-    avatarUrl: 'https://i.pravatar.cc/100?img=6',
+    avatarUrl:
+      'https://ui-avatars.com/api/?name=James+Wilson&background=random&size=100',
   },
   {
     id: 7,
@@ -86,7 +92,8 @@ export const USERS: User[] = [
     createdAt: '2024-01-05T09:50:00Z',
     lastLogin: '2024-06-09T09:00:00Z',
     isEmailVerified: true,
-    avatarUrl: 'https://i.pravatar.cc/100?img=7',
+    avatarUrl:
+      'https://ui-avatars.com/api/?name=Olivia+Martinez&background=random&size=100',
   },
   {
     id: 8,
@@ -97,7 +104,8 @@ export const USERS: User[] = [
     createdAt: '2023-10-30T08:30:00Z',
     lastLogin: '2024-03-15T10:15:00Z',
     isEmailVerified: false,
-    avatarUrl: 'https://i.pravatar.cc/100?img=8',
+    avatarUrl:
+      'https://ui-avatars.com/api/?name=Michael+Davis&background=random&size=100',
   },
   {
     id: 9,
@@ -108,7 +116,8 @@ export const USERS: User[] = [
     createdAt: '2024-05-12T12:00:00Z',
     lastLogin: '2024-06-11T08:20:00Z',
     isEmailVerified: true,
-    avatarUrl: 'https://i.pravatar.cc/100?img=9',
+    avatarUrl:
+      'https://ui-avatars.com/api/?name=Sophia+Garcia&background=random&size=100',
   },
   {
     id: 10,
@@ -119,7 +128,8 @@ export const USERS: User[] = [
     createdAt: '2024-03-18T07:40:00Z',
     lastLogin: null,
     isEmailVerified: false,
-    avatarUrl: 'https://i.pravatar.cc/100?img=10',
+    avatarUrl:
+      'https://ui-avatars.com/api/?name=William+Anderson&background=random&size=100',
   },
   {
     id: 11,
@@ -130,7 +140,8 @@ export const USERS: User[] = [
     createdAt: '2024-02-25T10:30:00Z',
     lastLogin: '2024-06-06T13:45:00Z',
     isEmailVerified: true,
-    avatarUrl: 'https://i.pravatar.cc/100?img=11',
+    avatarUrl:
+      'https://ui-avatars.com/api/?name=Isabella+Thomas&background=random&size=100',
   },
   {
     id: 12,
@@ -141,7 +152,8 @@ export const USERS: User[] = [
     createdAt: '2023-11-20T11:55:00Z',
     lastLogin: null,
     isEmailVerified: false,
-    avatarUrl: 'https://i.pravatar.cc/100?img=12',
+    avatarUrl:
+      'https://ui-avatars.com/api/?name=Ethan+Jackson&background=random&size=100',
   },
   {
     id: 13,
@@ -152,7 +164,8 @@ export const USERS: User[] = [
     createdAt: '2024-01-10T09:25:00Z',
     lastLogin: '2024-06-07T17:30:00Z',
     isEmailVerified: true,
-    avatarUrl: 'https://i.pravatar.cc/100?img=13',
+    avatarUrl:
+      'https://ui-avatars.com/api/?name=Mia+White&background=random&size=100',
   },
   {
     id: 14,
@@ -163,7 +176,8 @@ export const USERS: User[] = [
     createdAt: '2024-02-08T14:00:00Z',
     lastLogin: null,
     isEmailVerified: false,
-    avatarUrl: 'https://i.pravatar.cc/100?img=14',
+    avatarUrl:
+      'https://ui-avatars.com/api/?name=Benjamin+Harris&background=random&size=100',
   },
   {
     id: 15,
@@ -174,7 +188,8 @@ export const USERS: User[] = [
     createdAt: '2024-03-03T08:00:00Z',
     lastLogin: '2024-06-03T10:10:00Z',
     isEmailVerified: true,
-    avatarUrl: 'https://i.pravatar.cc/100?img=15',
+    avatarUrl:
+      'https://ui-avatars.com/api/?name=Charlotte+Clark&background=random&size=100',
   },
   {
     id: 16,
@@ -185,7 +200,8 @@ export const USERS: User[] = [
     createdAt: '2024-04-10T13:15:00Z',
     lastLogin: '2024-06-11T15:20:00Z',
     isEmailVerified: true,
-    avatarUrl: 'https://i.pravatar.cc/100?img=16',
+    avatarUrl:
+      'https://ui-avatars.com/api/?name=Liam+Lewis&background=random&size=100',
   },
   {
     id: 17,
@@ -196,7 +212,8 @@ export const USERS: User[] = [
     createdAt: '2024-01-25T10:10:00Z',
     lastLogin: '2024-03-20T09:00:00Z',
     isEmailVerified: false,
-    avatarUrl: 'https://i.pravatar.cc/100?img=17',
+    avatarUrl:
+      'https://ui-avatars.com/api/?name=Amelia+Robinson&background=random&size=100',
   },
   {
     id: 18,
@@ -207,7 +224,8 @@ export const USERS: User[] = [
     createdAt: '2024-02-15T15:30:00Z',
     lastLogin: '2024-06-10T08:45:00Z',
     isEmailVerified: true,
-    avatarUrl: 'https://i.pravatar.cc/100?img=18',
+    avatarUrl:
+      'https://ui-avatars.com/api/?name=Noah+Walker&background=random&size=100',
   },
   {
     id: 19,
@@ -218,7 +236,8 @@ export const USERS: User[] = [
     createdAt: '2024-03-12T09:30:00Z',
     lastLogin: null,
     isEmailVerified: false,
-    avatarUrl: 'https://i.pravatar.cc/100?img=19',
+    avatarUrl:
+      'https://ui-avatars.com/api/?name=Ava+Hall&background=random&size=100',
   },
   {
     id: 20,
@@ -229,6 +248,7 @@ export const USERS: User[] = [
     createdAt: '2024-04-05T12:45:00Z',
     lastLogin: '2024-06-12T11:10:00Z',
     isEmailVerified: true,
-    avatarUrl: 'https://i.pravatar.cc/100?img=20',
+    avatarUrl:
+      'https://ui-avatars.com/api/?name=Elijah+Allen&background=random&size=100',
   },
 ];

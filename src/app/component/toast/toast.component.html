@@ -1,0 +1,13 @@
+<div class="toast-container">
+  <div class="toast" *ngFor="let toast of toasts()" [ngClass]="toast.type">
+    <div class="toast-icon">
+      <ng-container [ngSwitch]="toast.type">
+        <span *ngSwitchCase="'success'">✅</span>
+        <span *ngSwitchCase="'error'">❌</span>
+        <span *ngSwitchCase="'info'">ℹ️</span>
+        <span *ngSwitchCase="'warning'">⚠️</span>
+      </ng-container>
+    </div>
+    <div class="toast-message">{{ toast.message }}</div>
+  </div>
+</div>
