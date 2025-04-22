@@ -1,18 +1,16 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { USERS } from '../data/users';
-import { PRODUCTS } from '../data/products';
+import { ToastComponent } from './component/toast/toast.component';
+import { SidebarComponent } from './component/sidebar/sidebar.component';
+import { HeaderComponent } from './component/header/header.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [RouterOutlet, ToastComponent, SidebarComponent, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'adminP';
-}
-export class DashboardComponent {
-  USERS = USERS;
-  PRODUCTS = PRODUCTS;
+  title = 'Admin-Project';
 }
